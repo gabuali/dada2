@@ -1,0 +1,19 @@
+Installing R packages on Odyssey
+
+# Prerequisite: Create a directory for your R package installs in your home folder on Odyssey.
+$ mkdir -pv ~/apps/R
+
+# Set environmental variable each time you're installing new R packages 
+# so they get installed into the local directory you created in the previous step.
+# Or add this line to ~/.bashrc:
+
+$ export R_LIBS_USER=$HOME/apps/R:$R_LIBS_USER
+
+# Start an R session and install packages as you normally would and they will be installed locally.
+
+# For more see here: Installing R packages
+https://www.rc.fas.harvard.edu/resources/documentation/software-on-odyssey/r/
+
+
+
+

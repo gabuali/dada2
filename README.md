@@ -62,22 +62,22 @@ https://www.rc.fas.harvard.edu/resources/documentation/software-on-odyssey/r/
 
 
 
-===
 * If logged in on an Odyssey node then load the below dependencies in your environment but see NOTE below.  It's better to login through hutlab servers and load the dada2 module.
 NOTE:  Running DADA2 from an Odyssey login node will generate all output except the workflow report PDF.  Because there is an issue with Pandoc not being able to find a "ifxetex.sty" latex style file.  Hence best to use the hutlab dada2 module when running on Odyssey as well.
 
+```
 # Source new module system to load R 3.4, pandoc, and fasttree.
-$ source new-modules.sh
+source new-modules.sh
 
 # Load R version 3.4 in environment.
-$ module load R/3.4.2-fasrc01
+module load R/3.4.2-fasrc01
 
 # Load pandoc into your environment before running DADA2, make sure it's version 1.12.3 or higher.
-$ module load pandoc/2.0.2-fasrc01
+module load pandoc/2.0.2-fasrc01
 
 # Load fasttree for constructing phylogeny.
-$ module load fasttree/2.1.9-fasrc01
-
+module load fasttree/2.1.9-fasrc01
+```
 
 
 
